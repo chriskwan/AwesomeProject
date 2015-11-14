@@ -4,16 +4,6 @@
  */
 'use strict';
 
-var MOCKED_MOVIES_DATA = [
-  {title: 'Title', year: '2015', posters: {thumbnail: 'http://i.imgur.com/UePbdph.jpg'}},
-];
-
-/**
- * For quota reasons we replaced the Rotten Tomatoes' API with a smaple data of
- * their very own API tht lives in React Native's Github repo.
- */
-var REQUEST_URL = 'https://raw.githubusercontent.com/facebook/react-native/master/docs/MoviesExample.json';
-
 var React = require('react-native');
 var {
   AppRegistry,
@@ -23,6 +13,16 @@ var {
   Text,
   View,
 } = React;
+
+// var MOCKED_MOVIES_DATA = [
+//   {title: 'Title', year: '2015', posters: {thumbnail: 'http://i.imgur.com/UePbdph.jpg'}},
+// ];
+
+/**
+ * For quota reasons we replaced the Rotten Tomatoes' API with a smaple data of
+ * their very own API tht lives in React Native's Github repo.
+ */
+var REQUEST_URL = 'https://raw.githubusercontent.com/facebook/react-native/master/docs/MoviesExample.json';
 
 var AwesomeProject = React.createClass({
   getInitialState: function() {
